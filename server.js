@@ -53,3 +53,7 @@ function getKurentoClient(callback) {
         callback(null, kurentoClient);
     });
 }
+
+io.on('connection', socket => {
+    console.log('socket.io connected');
+})
